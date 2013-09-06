@@ -11,6 +11,9 @@ body {
 ul {
   margin-top: 10px;
 }
+a {
+  color: #333333;
+}
 .name {
   font-size: 200%;
   font-family: Arial, sans-serif;
@@ -44,63 +47,106 @@ p {
 .title {
   font-style: italic;
 }
+.where {
+  padding-left: 10px;
+}
+.period {
+ white-space: nowrap;
+}
+
 </style>
 </head>
 <body>
 <div class="name">Alexander Tihonruk</div>
 <div class="Address">
-Bozhenko str. 83, kv. 20<br/>
+Kazimira Malevicha str. 83, kv. 20<br/>
 Kiev 03150<br/>
 +38 0957170033<br/>
-a.tihonruk@gmail.com</div>
-<table cellspacing="10px">
+<a href="mailto:a.tihonruk@gmail.com">a.tihonruk@gmail.com</div>
+<table cellspacing="16px">
 <tr valign="top"><td colspan="2">
  <div class="section">Employment and Professional Activities</div></td></tr>
 
+
 <tr valign="top">
-<td>2006-2011</td>
+<td class="period">2012 - 2013</td>
+<td class="job"><span class="employer">ArtOfBytes UG</span>
+<span class="where"><a href="http://artofbytes.com">http://artofbytes.com/</a></span>
+<div class="title">Software developer</div>
+
+<br/>Java/Android developer in a company specializing in mobile games and applications development.<br/>
+<br/>
+Projects:<br/>
+<p>
+MMO game. Development, deployment and operation of back-end for MMO game.<br/>
+Integration with third-party services (payments, geo-location, etc) and social networks.<br/>
+Technologies used: SmartfoxServer 2X, Spring framework, MySQL, MyBatis, Redis, Elasticsearch, Amazon AWS.
+</p>
+<p>
+Plugins (Android/Unity3D):<br/>
+- <a href="http://tools.artofbytes.com/android-media-browser">Android Media Browser</a> - easy way to access media content on Android devices<br/>
+- <a href="http://tools.artofbytes.com/google-play-game-services-plugin">Google Play Game Services Plugin<a> - developer friendly wrapper for Google Play Games services<br/>
+- <a href="http://tools.artofbytes.com/weather-report-plugin">Weather Report</a> - real-time weather data from <a href="http://www.wunderground.com/">wunderground.com</a><br/>
+- <a href="http://www.t-store.com.kr/">T-Store</a> in-app purchases plugin
+</p>
+
+
+</td></tr>
+
+
+
+<tr valign="top">
+<td class="period">2006 - 2011</td>
 <td class="job"><span class="employer">MTS Ukraine</span>
-<span class="where">Kiev, Ukraine</span>
+<span class="where"><a href="http://mts.com.ua/">http://mts.com.ua/</a></span>
 <div class="title">Systems analyst, billing platform development department</div>
 
-<br/>Ukrainian branch of “Mobile TeleSystems” (MTS), operator of cellular communication with more than 18 million subscribers.<br/>
+<br/>
+<p>Ukrainian branch of “Mobile TeleSystems” (MTS), operator of cellular communication with more than 18 million subscribers.
+<br/>
 
-<br/>Responsibilities:<br/> 
+<p>Responsibilities:<br/> 
 - participation in projects as an analyst and/or technical project manager<br/> 
 - requirements gathering and analysis<br/> 
 - analysis and resolving of incidents<br/> 
-- technical writing<br/> 
-
-<br/>Most significant completed projects:
+- technical writing<br/>
+- software development
+</p>
+<br/>
+<p>Most significant completed projects:
 <ul>
-  <li>Money Transfer service implementation</li>
-  <li>prepaid subscribers personal data collection</li>
+  <li><a href="http://www.mts.com.ua/eng/money_p.php">Money Transfer</a> service implementation</li>
+  <li><a href="http://www.mts.com.ua/eng/registration.php">prepaid subscribers personal data collection</a></li>
   <li>campaign management system for prepaid market</li>
   <li>integration of USSD platform and billing system</li>
   <li>GPRS online charging implementation</li>
-  <li>CLIR (Calling Line Identification Restriction) paid service</li>
-  <li>implementation of migration between postpaid and prepaid</li>
+  <li><a href="http://www.mts.com.ua/eng/clir.php">CLIR</a> (Calling Line Identification Restriction) paid service</li>
+  <li>implementation of <a href="http://www.mts.com.ua/eng/mts_migration.php">migration between postpaid and prepaid</a></li>
   <li>simcard reuse automation</li>
-  <li>implementation of RingBackTone service (branded as Good'OK)</li>
+  <li>implementation of <a href="http://www.mts.com.ua/eng/goodok.php">RingBackTone service</a> (known as Good'OK)</li>
   <li>migration of 20m prepaid subscribers between billing platforms</li>
   <li>design and development of IS for managing information about geographical organization of cellular network</li> 
 </ul>
+</p>
 </td></tr>
 
 <tr valign="top">
-<td>2000-2005</td>
+<td class="period">2000 - 2005</td>
 <td class="job"><span class="employer">Active 97 Ltd</span>
-<span class="where">Kiev, Ukraine</span>
-<div class="title">Analyst/developer</div>
-Small company specializing in market research of domestic FMCG market.
-<br/>Responsibilities:<br/> 
+<span class="where"><a href="http://active.kiev.ua">http://active.kiev.ua/</a></span>
+<div class="title">Analyst/software developer</div>
+<br/>
+<p>Analyst/developer in a company specializing in market research of domestic FMCG market.</p>
+
+<p>Responsibilities:<br/> 
 - requirements gathering and analysis<br/>
-- in-house software development
+- software development<br/>
 - data warehouses design and development<br/>
 - ETL tasks<br/>
 - interaction with key customers<br/>
-Completed projects: reporting automation, billing automation, website integration.<br/>
-Main technologies: Oracle, J2EE.
+</p>
+<p>Completed projects: reporting automation, billing automation, website integration.</p>
+<p>Main technologies: Oracle technology stack, J2EE.</p>
 </td></tr>
 
 <tr valign="top"><td colspan="2"><div class="section">Competences</div></td></tr>
@@ -108,13 +154,20 @@ Main technologies: Oracle, J2EE.
 <tr valign="top"><td>&#xA0;</td>
 <td  class="competences">
 <dl>
-<dt>Telecom technologies:</dt><dd>GSM architecture, prepaid service, IN, rating and charging, CDR collection, service provisioning</dd>
+<dt>Telecom technologies and activities:</dt><dd>GSM architecture, prepaid service, IN, rating and charging, CDR collection, service provisioning</dd>
 <dt>Operation systems:</dt><dd>Linux, *NIX (Solaris, HP-UX, etc)</dd>
-<dt>Programming languages:</dt><dd>Java SE/EE, SQL, PL/SQL, Python, Awk, shell, C</dd>
-<dt>DBMS:</dt><dd>Oracle</dd>
-<dt>Documenting:</dt><dd>DocBook, Wiki, Office suites</dd>
-<dt>XML technologies:</dt><dd>XSLT/XPath, RelaxNG, W3C Schema, SVG, FO, XHTML</dd>
-<dt>Version control systems:</dt><dd>CVS, Subversion, Mercurial</dd>
+<dt>Programming languages and platforms:</dt>
+<dd>Java</dd>
+<dd>Python</dd>
+<dd>SQL, Oracle PL/SQL</dd>
+<dd>UNIX mini languages - sed, awk, shell(s)</dd>
+<dd>C (C99, GNU toolchain - gcc, make, etc)</dd>
+<dd>Lisp family: Common Lisp, Emacs Lisp, Clojure</dd>
+<dd>Android SDK/NDK</dd>
+<dt>DBMS:</dt><dd>Oracle, MySQL</dd>
+<dt>XML & markup:</dt><dd>HTML, XSLT/XPath, RelaxNG, W3C Schema, SVG, etc</dd>
+<dt>Non relational data storage:</dt><dd>Redis, Elasticsearch</dd>
+<dt>Version control systems:</dt><dd>CVS, Subversion, Mercurial, Git</dd>
 </dl>
 <dl><dt>Languages:</dt><dd>russian (native)</dd><dd>english (limited working proficiency)</dd></dl>
 </td>
@@ -123,7 +176,7 @@ Main technologies: Oracle, J2EE.
 
 <tr valign="top"><td colspan="2"><div class="section">Courses and Certificates</div></td></tr>
 <tr valign="top"><td>2007</td><td class="course">
-IN @vantage Platform Operating V7 (Nokia Siemens Networks)<br/>
+IN @vantage Platform Operating V7 (NSN (Nokia Siemens Networks))<br/>
 IN @vantage Service Administration and Operation V7 (NSN)<br/>
 IN @vantage Flexible Rating and Charging, Tariff Tool (NSN)<br/>
 IN CAMEL - Concepts and Technical Aspects (NSN)
