@@ -11,6 +11,13 @@ body {
 ul {
   margin-top: 10px;
 }
+p {
+  margin-top: 1em; 
+  margin-bottom: 0.5em;
+}
+a {
+  color: #333333;
+}
 .name {
   font-size: 200%;
   font-family: Arial, sans-serif;
@@ -37,10 +44,6 @@ table {
   padding-left: 10px;
   border-left: 1px solid #040;
 }
-p {
-  margin-top: 2px; 
-  margin-bottom: 2px;
-}
 .employer {
   /* font-weight: bold; */
   font-size: 120%;
@@ -48,40 +51,76 @@ p {
 .title {
   font-style: italic;
 }
+.period {
+ white-space: nowrap;
+}
+.where {
+ padding-left: 10px;
+ font-size: 95%;
+}
 </style>
 </head>
 <body>
 <div class="name">Александр Тихонрук</div>
 <div class="Address">
 Киев 03150<br/>
-ул. Боженко 83, кв. 20<br/>
+ул. Казимира Малевича 83, кв. 20<br/>
 +38 0957170033<br/>
-a.tihonruk@gmail.com</div>
+<a href="mailto:a.tihonruk@gmail.com">a.tihonruk@gmail.com</a></div>
 <table cellspacing="10px">
 <tr valign="top"><td colspan="2"><div class="section">Опыт работы</div></td></tr>
+
+
 <tr valign="top">
-<td>2006-2011</td>
+<td class="period">2012 - 2013</td>
+<td class="job"><span class="employer">ArtOfBytes UG</span>
+<span class="where"><a href="http://artofbytes.com">http://artofbytes.com/</a></span>
+<div class="title">Разработчик ПО</div>
+
+<br/>Java/Android разработчик в компании, специализирующейся на создании мобильных приложений и игр.<br/>
+
+<p>Проекты:</p>
+<p>
+MMO игра.
+Разбработка, развертывание и эксплуатация серверной части MMO игры.<br/>
+Интеграция с платежными сервисами, сервисом геолокации, социальными сетями<br/>
+Технологии: SmartfoxServer 2X, Spring framework, MySQL, MyBatis, Elasticsearch, Redis, Amazon AWS.
+</p>
+<p>
+Плагины для мобильных игр (Android/Unity3D):<br/>
+- <a href="http://tools.artofbytes.com/android-media-browser">Android Media Browser</a> - простой доступ к медиа-библиотеке Android устройств<br/>
+- <a href="http://tools.artofbytes.com/google-play-game-services-plugin">Google Play Game Services Plugin<a> - интеграция с игровыми сервисами от Google<br/>
+- <a href="http://tools.artofbytes.com/weather-report-plugin">Weather Report</a> - интеграция с провайдером погоды <a href="http://www.wunderground.com/">wunderground.com</a><br/>
+- T-Store in-app purchases - интеграция с in-app покупками корейского оператора <a href="http://www.t-store.com.kr/">T-Store</a>
+</p>
+</td></tr>
+
+
+<tr valign="top">
+<td class="period">2006 - 2011</td>
 <td class="job"><span class="employer">ЗАО Украинская Мобильная Связь (МТС Украина)</span>
-<span class="where">Киев, Украина</span>
-<div class="title">инженер, отдел развития биллинговых платформ</div>
+<span class="where"><a href="http://mts.com.ua/">http://mts.com.ua/</a></span>
+<div class="title">системный аналитик</div>
+<p>Cистемный аналитик в отделе развития биллинговых платформ, сегмент prepaid.</p>
+<p>Обязанности:</p>
 <p>
 Работа с внутренними клиентами (бизнес-подразделениями): анализ требований, проработка и техническая реализация новых предложений.
 Участие в проектной деятельности в качестве аналитика и/или технического руководителя проекта.
 Работа с поставщиками, оценка тендерных предложений, поддержка, развитие существующих систем и внедрение новых.
-Анализ и решение инцидентов. Написание технической документации. In-house разработка ПО.
+Анализ и решение инцидентов. Написание технической документации. Разработка ПО.
 </p>
 <p>Завершенные проекты:
 <ul>
-  <li>внедрение услуги Money Transfer</li>
-  <li>регистрация персональных данных prepaid абонентов</li>
+  <li>внедрение услуги <a href="http://www.mts.com.ua/rus/money_p.php">Money Transfer - перевод денег между счетами абонентов</a></li>
+  <li><a href="http://www.mts.com.ua/rus/registration.php">регистрация персональных данных prepaid абонентов</a></li>
   <li>универсальная система проведения акций для prepaid абонентов</li>
   <li>интеграция USSD платформы и биллинговой системы</li>
   <li>реализация GPRS online charging</li>
-  <li>услуга CLIR, сокрытие номера звонящего</li>
+  <li><a href="http://www.mts.com.ua/rus/clir.php">услуга CLIR</a>, сокрытие номера звонящего</li>
   <li>программа вознаграждения продавцов за реализованные стартовые пакеты</li>
-  <li>реализация миграции prepaid абонентов на контрактную форму обслуживания и обратно</li>
+  <li>реализация <a href="http://www.mts.com.ua/rus/mts_migration.php">перехода prepaid абонентов на контрактную форму обслуживания</a> и обратно</li>
   <li>автоматизация процесса повторного использования номерного ресурса</li>
-  <li>RingBackTone (услуга Good'OK)</li>
+  <li>услуга <a href="http://www.mts.com.ua/rus/goodok.php">RingBackTone (Good'OK)</a></li>
   <li>миграция 20 млн. prepaid абонентов на новую биллинговую платформу</li>
   <li>разработка системы для поддержания в актуальном состоянии географической информации о сети для проекта региональных тарифов</li>
 </ul>
@@ -89,29 +128,38 @@ a.tihonruk@gmail.com</div>
 </td></tr>
 
 <tr valign="top">
-<td>2000-2005</td>
+<td class="period">2000 - 2005</td>
 <td class="job"><span class="employer">ООО "Актив 97"</span>
-<span class="where">Киев, Украина</span>
-<div class="title">аналитик</div>
-Разработка программной инфраструктуры компании, занимающейся маркетинговыми исследованиями рынка FMCG.
-Участие в анализе требований, постановке задачи, доработке и поддержке трехуровневой информационной системы.
+<span class="where"><a href="http://active.kiev.ua">http://active.kiev.ua/</a></span>
+<div class="title">аналитик/разработчик</div>
+<p>
+Разработка программной инфраструктуры компании, занимающейся маркетинговыми исследованиями локального рынка FMCG.
+Участие в анализе требований, постановке задачи, доработке и поддержке многоуровневой информационной системы.
 Разработка хранилищ данных.
 Cоздание инструментов и организация процесса ETL.
 Автоматизация процесса изготовления и рассылки маркетинговых отчетов.
 Организация биллинга. Работа с ключевыми клиентами.
+</p>
 </td></tr>
 
 <tr valign="top"><td colspan="2"><div class="section">Профессиональные навыки и знания</div></td></tr>
 <tr valign="top"><td>&#xA0;</td>
 <td  class="competences">
 <dl>
-<dt>Телекоммуникации:</dt><dd>GSM, IN, rating and charging, CDR collection, service provisioning</dd>
-<dt>Операционные системы:</dt><dd>Linux, *NIX (Solaris, HP-UX и т.п.)</dd>
-<dt>Языки программирования:</dt><dd>Java, SQL, PL/SQL, scripting под *nix (Awk, Python, Shell), C, S-expession based (Lisp-like) языки</dd>
-<dt>СУБД:</dt><dd>Oracle, PostgreSQL</dd>
-<dt>Документирование:</dt><dd>DocBook, Wiki, офисные пакеты</dd>
-<dt>XML-технологии:</dt><dd>XSLT/XPath, RelaxNG, W3C Schema, SVG, FO, XHTML</dd>
-<dt>Системы контроля версий:</dt><dd>CVS, Subversion, Mercurial</dd>
+<dt>Языки программирования:</dt>
+<dd>Java</dd>
+<dd>Python</dd>
+<dd>SQL, Oracle PL/SQL</dd> 
+<dd>скриптовые языки для Unix - awk, sed, shell(s)</dd>
+<dd>C (C99, GNU toolchain - gcc, make, etc)</dd>
+<dd>Lisp family: Common Lisp, Emacs Lisp, Clojure</dd>
+<dt>Операционные системы:</dt>
+<dd>Linux/UNIX - опытный пользователь/администратор, основная среда более 10 лет</dd>
+<dt>СУБД:</dt><dd>Oracle, MySQL, PostgreSQL</dd>
+<dt>Нереляционные хранилища данных:</dt><dd>Redis, Elasticsearch</dd>
+<dt>XML & markup:</dt><dd>HTML, XSLT/XPath, RelaxNG, W3C Schema, SVG, etc</dd>
+<dt>Системы контроля версий:</dt><dd>CVS, Subversion, Mercurial, Git</dd>
+<dt>Телекоммуникации:</dt><dd>GSM, prepaid, VAS, IN, rating and charging</dd>
 </dl>
 
 <dl><dt>Иностранные языки:</dt><dd>английский (intermediate)</dd></dl>
