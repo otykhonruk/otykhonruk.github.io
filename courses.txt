@@ -1,0 +1,47 @@
+NSN training center, Berlin, Germany 	12/10/2007
+Description: 	IN @vantage Service Administration and Operation V7
+ 
+
+Siemens training center
+
+Berlin
+Germany
+06/02/2007
+Description: 	IN @vantage Platform Operating V7
+ 
+
+School Name: 	NSN training center
+
+Berlin
+Germany
+16/10/2007
+Description: 	IN @vantage Flexible Rating and Charging, Tariff Tool
+ 
+
+NSN training center
+
+Berlin
+Germany
+18/12/2007
+Description: 	IN CAMEL - Concepts and Technical Aspects
+ 
+
+
+NSN training center
+Vienna
+Austria
+05/02/2008
+Description: 	IN ServiceXpress Applications for PPS
+ 
+
+NSN training center
+Vienna
+Austria
+07/02/2008
+Description: 	IN ServiceXpress System Administration for Framework 3.5
+
+
+Prague
+2008  	    	  
+Duration: 	7 days
+Medio OCS for Operators (Sitronics) 
