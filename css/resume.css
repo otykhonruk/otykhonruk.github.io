@@ -1,0 +1,50 @@
+body {
+  margin: 40px 80px 80px 80px;
+  font-family: Georgia, serif;
+  background: #f8f8f8;
+}
+ul {
+  margin-top: 10px;
+}
+a {
+  color: #333333;
+}
+table { 
+  background: #e8e8e8;
+  margin-top: 30px;
+}
+section {
+  font-family: Arial, sans-serif;
+  font-size: 130%;
+  font-weight: bold;
+}
+.fn {
+  font-size: 200%;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+.job, .course {
+  padding-left: 10px;
+  border-left: 1px solid #040;
+}
+.course {
+  padding-left: 10px;
+  border-left: 1px solid #040;
+}
+p {
+  margin-top: 2px; 
+  margin-bottom: 2px;
+}
+.employer {
+  /* font-weight: bold; */
+  font-size: 120%;
+}
+.title {
+  font-style: italic;
+}
+.where {
+  padding-left: 10px;
+}
+.period {
+ white-space: nowrap;
+}

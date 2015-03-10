@@ -1,0 +1,13 @@
+body {
+    font-family: Helvetica, Georgia, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
+span.icon:before {
+    font-size: 32px;
+}
