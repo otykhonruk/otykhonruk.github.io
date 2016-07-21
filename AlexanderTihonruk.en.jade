@@ -1,23 +1,20 @@
 doctype html
 html
   head
-    meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+    meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
     style
       include css/resume.css
     title Resume: Alexander Tihonruk
   body
-    div.vcard
-      div.fn Alexander Tihonruk
-      div.adr
-        div.street-address Kazimira Malevicha str. 83, apt. 20
-        div
-          span.locality Kyiv 
-          span.postal-code 03150
-      div.tel +38 095 7170033
+    div.h-card
+      div.p-name Alexander Tihonruk
       div
-        a.email(href="mailto:a.tihonruk@gmail.com") a.tihonruk@gmail.com
+        span.p-locality Kyiv
+        | ,
+        span.p-country-name Ukraine
+      div.p-tel +38 095 7170033
       div
-        a(href="skype:atihonruk") skype:atihonruk
+        a.u-email(href="mailto:a.tihonruk@gmail.com") a.tihonruk@gmail.com
     table(cellspacing="16px")
       tr(valign="top")
         td(colspan="2")
@@ -31,12 +28,15 @@ html
               a.where(href=where)= where
               div.title= title
               block
-        +job("2014 - present", "kvartirkov.com", "", "Software developer")
-          p. 
+        +job("2016 - ongoing", "Web Academy", "http://web-academy.com.ua", "Trainer")
+          p.
+            Python/Django course.
+        +job("2014 - 2016", "kvartirkov.com", "", "Lead developer")
+          p.
             Web-development. Complete reimplementation of apartment rentals web-site.<br/>
-            Technologies: Python, Django, PostgreSQL, PostGIS,  Redis.
+            Technologies: Python, Django, MySQL/PostgreSQL, Redis, Celery.
 
-        +job("2013 - 2014", "IBS Ltd.", "", "Software developer")
+        +job("2013 - 2014", "IBS Ltd.", "", "Lead developer")
           p.
             Design and development of the internet banking system.<br/>
             Back end - Tomcat, Spring, Hibernate, Apache Camel.<br/>
@@ -99,36 +99,43 @@ html
       tr(valign="top")
         td &#xA0;
         td.competences
+          p
+           |Key competences: software development, project management, interviewing, mentoring, teaching, technical writing, requirements analysis, systems analysis, negotiation, troubleshooting
           dl
-            dt Telecom technologies and activities:
-            dd GSM architecture, prepaid service, IN, rating and charging, CDR collection, service provisioning
-            dt Operation systems:
-            dd Linux, *NIX
             dt Programming languages and platforms:
-            dd Java
+            dd Java (Java SE, Android SDK)
             dd Python
             dd SQL, Oracle PL/SQL
             dd UNIX mini languages - sed, awk, shell scripting
             dd C (C99, GNU toolchain - gcc, make, etc)
             dd Clojure
-            dd Android SDK/NDK
-            dd Javascript
+            dd Javascript (ES5, ES6)
+
             dt DBMS:
             dd Oracle, PostgreSQL, MySQL
-            dt XML & markup:
-            dd HTML, XSLT/XPath, RelaxNG, W3C Schema, SVG, etc.
+
             dt Non relational data storage and search engines:
             dd Redis, Elasticsearch
+
+            dt Operating systems:
+            dd Linux, MacOS, *NIX
+
+            dt XML & markup:
+            dd HTML5, XSLT/XPath, RelaxNG, W3C Schema, SVG, etc.
+
             dt Version control systems:
-            dd CVS, Subversion, Mercurial, Git
+            dd Git, Mercurial, Subversion, CVS
+
+            dt Telecom technologies and activities:
+            dd GSM architecture, prepaid service, IN, rating and charging, CDR collection, service provisioning
           dl
             dt Spoken languages:
             dd russian (native)
             dd ukrainian (native)
             dd english (limited working proficiency)
-        tr(valign="top")
-          td(colspan="2")
-            section Personal
-        tr(valign="top")
-          td(colspan="2")
-            p Born November 14, 1979 in Kyiv. Married, one child.
+        //- tr(valign="top")
+        //-   td(colspan="2")
+        //-     section Personal
+        //- tr(valign="top")
+        //-   td(colspan="2")
+        //-     p Born November 14, 1979 in Kyiv.
