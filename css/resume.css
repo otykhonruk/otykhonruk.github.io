@@ -1,6 +1,6 @@
 body {
     margin: 40px 80px 80px 80px;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: "Helvetica Neue", Roboto,  sans-serif;
     background: #f8f8f8;
     line-height: 130%;
 }
@@ -12,18 +12,32 @@ a {
     color: #a40;
 }
 table { 
-    background: #e8e8e8;
     margin-top: 30px;
+    table-layout: fixed; border:0; border-collapse:collapse;
+}
+tr.header td {
+    padding: 18px;
+}
+td {
+    padding: 20px;
 }
 section {
     font-size: 130%;
     font-weight: bold;
 }
+.header {
+    background-color: #d8d8d8;
+    border-radius: 5px;
+}
 .p-name {
     font-size: 200%;
-    font-family: Arial, sans-serif;
     font-weight: bold;
 }
+.p-role {
+    font-size: 125%;
+    font-weight: normal;
+}
+
 .job, .course {
     padding-left: 10px;
     border-left: 1px solid #040;
@@ -41,16 +55,22 @@ p {
     /* font-size: 120%; */
 }
 .title {
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 110%;
 }
 .where {
     padding-left: 10px;
 }
 .period {
     white-space: nowrap;
+    font-weight: 500;
+    font-size: 110%;
 }
 .duration {
     white-space: nowrap;
     font-style: italic;
     color: #999;
+}
+img {
+    border-radius: 5%;
 }
