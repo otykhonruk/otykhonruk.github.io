@@ -1,33 +1,30 @@
 body {
-    margin: 40px 80px 80px 80px;
-    font-family: "Helvetica Neue", Roboto,  sans-serif;
+    margin: 20px 80px 80px 80px;
+    font-family: "Helvetica Neue", Roboto, sans-serif;
     background: #f8f8f8;
     line-height: 130%;
 }
 ul {
-    margin-top: 10px;
+    list-style-type: square;
 }
 a {
     text-decoration: none; 
     color: #a40;
 }
-table { 
+table {
     margin-top: 30px;
-    table-layout: fixed; border:0; border-collapse:collapse;
+    background-color: #e8e8e8;
 }
 tr.header td {
-    padding: 18px;
-}
-td {
-    padding: 20px;
+    padding-left: 0;
 }
 section {
+    margin-top: 5px;
     font-size: 130%;
     font-weight: bold;
 }
 .header {
-    background-color: #d8d8d8;
-    border-radius: 5px;
+    background: #f8f8f8;
 }
 .p-name {
     font-size: 200%;
@@ -37,7 +34,6 @@ section {
     font-size: 125%;
     font-weight: normal;
 }
-
 .job, .course {
     padding-left: 10px;
     border-left: 1px solid #040;
@@ -71,6 +67,6 @@ p {
     font-style: italic;
     color: #999;
 }
-img {
-    border-radius: 5%;
+.competences {
+    padding-top: 0;
 }

@@ -2,28 +2,30 @@ doctype html
 html
   head
     meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
+    meta
     style
       include css/resume.css
     title Resume: Oleksandr Tykhonruk
   body
+    div.h-card
+      h1.p-name Oleksandr Tykhonruk
+      h2.p-role Technical lead, trainer.
+      div
+        // span.p-locality Kyiv
+        // | ,
+        // span.p-country-name Ukraine
+        // div.p-tel +380 957170033
+        div.u-email a.tihonruk@gmail.com
+        div
+          a.u-url(href="https://linkedin.com/in/tihonruk") LinkedIn
+          | &nbsp;&bull;&nbsp;
+          a.u-url(href="https://github.com/atihonruk") GitHub
+
     table(cellspacing="16px")
-      tr.header(valign="top")
-        td
-          include portrait.pug
-        td
-          div.h-card
-            h1.p-name Oleksandr Tykhonruk
-            h2.p-role Technical lead, architect, trainer.
-            div
-              span.p-locality Kyiv
-              | ,
-              span.p-country-name Ukraine
-              div.p-tel +380 957170033
-              div.u-email a.tihonruk@gmail.com
-            div
-              a.u-url(href="http://linkedin.com/in/tihonruk") LinkedIn
-              | &nbsp;&bull;&nbsp;
-              a.u-url(href="https://github.com/atihonruk") GitHub
+      // tr.header(valign="top")
+      //   td
+      //    include portrait.pug
+      //   td(colspan="2")
 
       tr(valign="top")
         td(colspan="2")
@@ -50,7 +52,7 @@ html
         td(colspan="2")
           section Employment and Professional Activities
 
-      +job("2019 - present", "2 yrs 6 mos", "Takeoff Technologies Inc", "https://www.takeoff.com/", "Technical Lead")
+      +job("2019 - 2021", "2 yrs 6 mos", "Takeoff Technologies Inc", "https://www.takeoff.com/", "Technical Lead")
         p.
           Order fullfillment automation in grocery retail.
         dl
@@ -72,7 +74,9 @@ html
           dt Role
           dd Senior Python developer, "World of Tanks" development department.
           dt Projects
-          dd a(href="https://worldoftanks.eu/en/news/general-news/the-dark-front-halloween-mode/") Dark Front, a mode for the World of Tanks game.
+          dd 
+            a(href="https://worldoftanks.eu/en/news/general-news/the-dark-front-halloween-mode/") Dark Front
+            |, a mode for the World of Tanks game.
           dd Internal tool for in-game content creation that streamlines prototyping and development of new game modes.
           dt Key technologies
           dd Python, ActionScript 3, proprietary BigWorld engine (C++/Python).
@@ -135,7 +139,6 @@ html
           dt Role
           dd Systems analyst/TPM (technical project manager) at the Billing Platform Development department 
           dt Responsibilities
-          dt Responsibilities
           dd participation in projects as an analyst and/or technical project manager
           dd requirements gathering and analysis
           dd analysis and resolving of incidents
@@ -144,15 +147,15 @@ html
           dt Most significant completed projects
           dd Money Transfer service implementation
           dd Prepaid subscribers personal data collection
-          dd campaign management system for prepaid market
-          dd integration of USSD platform and billing system
+          dd Campaign management system for prepaid market
+          dd Integration of USSD platform and billing system
           dd GPRS online charging implementation
           dd CLIR (Calling Line Identification Restriction) paid service
-          dd implementation of migration between postpaid and prepaid
-          dd simcard reuse automation
-          dd implementation of RingBackTone service (known as Good'OK)
-          dd migration of 20m prepaid subscribers to the new billing platform
-          dd design and development of IS for managing information about geographical organization of cellular network
+          dd Implementation of migration between postpaid and prepaid
+          dd Simcard reuse automation
+          dd Implementation of RingBackTone service (known as Good'OK)
+          dd Migration of 20m prepaid subscribers to the new billing platform
+          dd Design and development of IS for managing information about the cellular network coverage
 
       +job("2000 - 2005", "4 yrs 7 mos", "Active 97 Ltd", "http://active.kiev.ua", "Data analyst")
         dl
@@ -171,7 +174,7 @@ html
       tr(valign="top")
         td(colspan="2")
           section Teaching
-      +job("2021 - present", "2 yrs 6 mos", "Hillel", "https://ithillel.ua", "Trainer")
+      +job("2021 - ", "9 mos", "Hillel", "https://ithillel.ua", "Trainer")
         p.
           Advanced Python course.
       +job("2018 - 2019", "1 yr",  "ITEA", "https://itea.ua", "Trainer")
@@ -192,7 +195,7 @@ html
             dd Kotlin
             dd Java
             dd SQL, procedural SQL (Oracle, PostgreSQL)
-            dd UNIX small languages - sed, awk, shell, etc.
+            dd UNIX utilities and languages - sed, awk, shell, etc.
             dd C (C99, GNU toolchain - gcc, make, etc)
             dd Javascript family: ES6, TypeScript
             
