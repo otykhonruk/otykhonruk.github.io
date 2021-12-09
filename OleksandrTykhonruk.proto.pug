@@ -1,0 +1,268 @@
+doctype html
+html
+  head
+    meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
+    style
+      include css/resume.grid.css
+    title Resume: Oleksandr Tykhonruk
+  body
+    div.container
+      aside.photo
+        include portrait.pug
+        // img.u-photo(src="portrait.jpg" width="180" height="180")
+      article.personal-info
+        h1.p-name Oleksandr Tykhonruk
+        h2.p-role Technical lead, architect, trainer
+
+        p
+          div
+            span.p-locality Kyiv
+            | ,
+            span.p-country-name Ukraine
+          div.u-email a.tihonruk@gmail.com
+          div.p-tel +380 957170033
+          // .p-tel(href="tel:+380957170033") +380 957170033
+          // a.u-email(href="mailto:a.tihonruk@gmail.com") a.tihonruk@gmail.com
+          div
+            a.u-url(href="http://linkedin.com/in/tihonruk") LinkedIn
+            | &nbsp;&bull;&nbsp;
+            a.u-url(href="https://github.com/atihonruk") GitHub
+
+      mixin job(period, duration, employer, where, title)
+        aside
+          span.period= period
+          br
+          span.duration= duration
+        article.job
+          div
+            span.title= title
+          span.employer= employer
+          a.where(href=where)= where
+          block
+
+      +job("2019 - 2021", "2 yrs 6 mos", "Takeoff Technologies Inc", "https://www.takeoff.com/", "Technical Lead")
+        p.
+          Order fullfillment automation in grocery retail.
+        dl
+          dt Role
+          dd Technical Lead of the team responsible for Inventory and Inbound operations.
+          dt Projects
+          dd Inbound service implementaion
+          dd Web-based decanting UI reimplementation
+          dd Cycle-counting implementation
+          dt Key technologies
+          dd Clojure, Python, Kotlin, TypeScript, Kubernetes, GCP (Google Cloud Platform).
+
+        
+      +job("2018 - 2019", "1 yr", "Wargaming", "https://wargaming.net/", "Senior Python developer")
+        p.
+          MMO game with 160M of registered users and more than a million of concurrent players.
+        dl
+          dt Role
+          dd Senior Python developer, "World of Tanks" development department.
+          dt Projects
+          dd <a href="https://worldoftanks.eu/en/news/general-news/the-dark-front-halloween-mode/">Dark Front</a>, a mode for the World of Tanks game.
+          dd Internal tool for vehicle creation that streamlines prototyping and development of new game modes.
+          dt Key technologies
+          dd Python, ActionScript 3, proprietary BigWorld engine (C++/Python).
+
+      +job("2017 - 2018", "8 mos", "Ocean.io", "https://ocean.io/", "Team Lead")
+        p.
+          Platform for collection and aggregation of the business data worldwide.
+        dl
+          dt Role
+          dd Lead of the data collection team consisting of 5 developers and an analyst.
+          dt Project
+          dd Scheduling system for large-scale crawls.
+          dt Key technologies
+          dd Python, Celery, asyncio/aiohttp, Elasticsearch, MongoDB, Amazon AWS.
+
+      +job("2016 - 2017", "6 mos", "Sportech LLC", "http://sporte.ch/", "Team Lead")
+        p.
+          Betting SaaS solution. 
+        dl
+          dt Role
+          dd Lead developer/team lead.
+          dt Projects
+          dd Data collection, automation of the bet placement, analytics.
+          dt Key technologies
+          dd Python, Selenium, Scrapy, Redis, MySQL, MongoDB, Elasticsearch, Django.
+
+      +job("2014 - 2016", "2 yrs 3 mos", "kvartirkov.com", "https://kvartirkov.com", "Lead developer")
+        dl
+          dt Role
+          dd Lead developer
+          dt Project
+          dd Complete reimplementation of the apartment rentals web-site.
+          dt Key technologies
+          dd Python, Django, MySQL/PostgreSQL, Redis.
+
+      +job("2013 - 2014", "7 mos", "IBS Ltd.", "", "Lead developer")
+        dl
+          dt Role
+          dd Lead developer
+          dt Project
+          dd Design and development of the internet banking system for the ukrainian bank.
+          dt Key technologies
+          dd Spring, Hibernate, Apache Camel, Ember.js
+      +job("2012 - 2013", "1 yr 1 mo", "ArtOfBytes UG", "", "Software engineer")
+        dl
+          dt Role
+          dd Java/Android developer in a small indie gamedev company specializing in mobile game development.
+          dt Projects
+          dd MMO game. Development, deployment and operation of the back-end for MMO game. Integration with third-party services (payments, geo-location, etc) and social networks.
+          dd Android Media Browser - easy way to access media content on Android devices
+          dd Google Play Game Services Plugin - developer friendly wrapper for Google Play Games services
+          dd Weather Report - real-time weather data
+          dd T-Store in-app purchases plugin
+          dt Key technologies
+          dd  Spring framework, SmartfoxServer 2X, MySQL, Redis, Elasticsearch, Amazon AWS, Unity 3D, Android
+
+      +job("2006 - 2011", "5 yrs 5 mos", "Ukrainian Mobile Communications, UMC (now Vodafone Ukraine)", "https://www.vodafone.ua/", "Systems analyst")
+        p Second largest mobile operator with more than 20M of subscribers.
+        dl
+          dt Role
+          dd Systems analyst/TPM (technical project manager) at the Billing Platform Development department 
+          dt Responsibilities
+          dd participation in projects as an analyst and/or technical project manager
+          dd requirements gathering and analysis
+          dd analysis and resolving of incidents
+          dd technical writing
+          dd software development
+          dt Most significant completed projects
+          dd
+            a(href="http://www.vodafone.ua/ua/services/upravlenie-schetom/zakonchilis-dengi/perevod-deneg") Money Transfer service implementation
+          dd
+            a(href="http://www.vodafone.ua/ua/support/faq/67-registraciya-mts/") prepaid subscribers personal data collection
+          dd campaign management system for prepaid market
+          dd integration of USSD platform and billing system
+          dd GPRS online charging implementation
+          dd
+            a(href="http://www.vodafone.ua/ru/services/poleznye-servisy/golosovye-uslugi/antiopredelitel-nomera") CLIR (Calling Line Identification Restriction) paid service
+          dd implementation of migration between postpaid and prepaid
+          dd simcard reuse automation
+          dd implementation of <a href="http://goodok.vodafone.ua/about">RingBackTone service</a> (known as Good'OK)
+          dd migration of 20m prepaid subscribers to the new billing platform
+          dd design and development of IS for managing information about geographical organization of cellular network
+      +job("2000 - 2005", "4 yrs 7 mos", "Active 97 Ltd", "http://active.kiev.ua", "Data analyst")
+        dl 
+        dt Role
+        dd Data analyst/software engineer in a company specializing in market research of domestic FMCG market.
+        dt Responsibilities
+        dd requirements gathering and analysis
+        dd software development
+        dd data warehouses design and development
+        dd ETL tasks
+        dd interaction with key customers
+        dt Completed projects:
+        dd reporting automation, billing automation, website integration.
+        dt Key technologies
+        dd Oracle technology stack, Java, Python
+
+    //-   //- div
+    //-   //-   span.period period
+    //-   //-   br
+    //-   //-   span.duration duration
+    //-   //- div
+    //-   //-   span.title title
+    //-   //-   span.employer employer
+    //-   //-   a.where(href=where) where
+
+    //-   div
+    //-     span.period 2019-2021
+    //-     br
+    //-     span.duration 2 yrs 6 mos
+    //-   div
+    //-     span.title Technical Lead
+    //-     span.employer Takeoff Technologies, Inc.
+    //-     a.where(href=where) https://www.takeoff.com
+    //-     p.
+    //-       Order fullfillment automation in grocery retail.
+    //-     dl
+    //-       dt Role
+    //-       dd Technical Lead of the team responsible for Inventory and Inbound operations consisting of 5 developers and 2 QAs.
+    //-       dt Projects
+    //-       dd Inbound service implementaion
+    //-       dd Web-based decanting UI reimplementation
+    //-       dd Cycle-counting implementation
+    //-       dt Key technologies
+    //-       dd Clojure, Python, Kotlin, TypeScript, Kubernetes, GCP (Google Cloud Platform).
+
+
+    //- table(cellspacing="16px")
+    //-   tr(valign="top")
+    //-     td(colspan="2")
+    //-       section Key competences
+    //-   tr(valign="top")
+    //-     td &#xA0;
+    //-     td.competences
+    //-       p.
+    //-               software architecture, software development, team management, project management, mentoring, teaching, technical writing, requirements analysis, systems analysis.
+
+    //-   tr(valign="top")
+    //-     td(colspan="2")
+    //-       section Employment and Professional Activities
+
+
+    //-   tr(valign="top")
+    //-     td(colspan="2")
+    //-       section Technical skills
+    //-   tr(valign="top")
+    //-     td &#xA0;
+    //-     td.competences
+    //-       dl
+    //-         dt Programming languages and platforms:
+    //-         dd Python
+    //-         dd Clojure
+    //-         dd Kotlin
+    //-         dd Java
+    //-         dd SQL, procedural SQL (Oracle, Postgre)
+    //-         dd UNIX small languages - sed, awk, shell, etc.
+    //-         dd C (C99, GNU toolchain - gcc, make, etc)
+    //-         dd Javascript family: ES6, TypeScript
+
+    //-         dt DBMS:
+    //-         dd Oracle, PostgreSQL, MySQL
+
+    //-         dt Non relational data storages and search engines:
+    //-         dd Redis, Elasticsearch, CouchDB, MongoDB
+
+    //-         dt Operating systems:
+    //-         dd Linux, MacOS, *NIX
+
+    //-         dt Common web formats/standards:
+    //-         dd HTML5, XSLT/XPath, RelaxNG, W3C Schema, SVG, etc.
+
+    //-         dt Version control systems:
+    //-         dd Git, Mercurial, Subversion, CVS
+
+    //-         dt Virtualization:
+    //-         dd Docker, Kubernetes
+
+    //-         dt Cloud:
+    //-         dd AWS, GCP
+
+    //-         dt Telecom-specific technologies and activities:
+    //-         dd GSM architecture, prepaid service, IN, rating and charging, CDR collection
+
+    //-   tr(valign="top")
+    //-     td(colspan="2")
+    //-       section Spoken languages
+    //-   tr(valign="top")
+    //-     td &#xA0;
+    //-     td.competences
+    //-       dl
+    //-         dd ukrainian (native)
+    //-         dd russian (native)
+    //-         dd english (B2, working proficiency)
+
+
+      //- +job("2018 - 2019", "1 yr",  "ITEA", "https://itea.ua", "Trainer")
+      //-   p
+      //-     a(href='https://itea.ua/courses-itea/python/python-advanced/') Advanced Python course
+    //-     +job("2016 - 2018", "2 yrs 6 mos", "Web Academy", "http://web-academy.com.ua", "Trainer")
+    //-       p.
+    //-         Python/Django courses.
+          dt Key competences
+ 	
+          dd software architecture, software development, team management, project management, mentoring, teaching, technical writing, systems analysis.
