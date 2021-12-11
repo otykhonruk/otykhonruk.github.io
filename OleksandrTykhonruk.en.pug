@@ -2,7 +2,6 @@ doctype html
 html
   head
     meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
-    meta
     style
       include css/resume.css
     title Resume: Oleksandr Tykhonruk
@@ -22,11 +21,7 @@ html
           a.u-url(href="https://github.com/atihonruk") GitHub
 
     table(cellspacing="16px")
-      // tr.header(valign="top")
-      //   td
-      //    include portrait.pug
-      //   td(colspan="2")
-
+     tbody
       tr(valign="top")
         td(colspan="2")
           section Key competences
@@ -123,21 +118,22 @@ html
       +job("2012 - 2013", "1 yr 1 mo", "ArtOfBytes UG", "", "Software engineer")
         dl
           dt Role
-          dd Java/Android developer in a small indie gamedev company specializing in mobile game development.<br/>
+          dd Java/Android developer in a small indie gamedev company specializing in mobile game development.
           dt Projects
-          dd MMO game. Development, deployment and operation of the back-end for MMO game. Integration with third-party services (payments, geo-location, etc) and social networks.
+          dd Development, deployment and operation of the back-end for MMO game.
+          dd Integration with third-party services (payments, geo-location, etc) and social networks.
           dd Android Media Browser - easy way to access media content on Android devices
           dd Google Play Game Services Plugin - developer friendly wrapper for Google Play Games services
           dd Weather Report - real-time weather data
           dd T-Store in-app purchases plugin
           dt Key technologies
-          dd Spring framework, SmartfoxServer 2X, MySQL, Redis, Elasticsearch, Amazon AWS, Unity 3D, Android<br/>
+          dd Spring framework, SmartfoxServer 2X, MySQL, Redis, Elasticsearch, Amazon AWS, Unity 3D, Android
 
       +job("2006 - 2011", "5 yrs 5 mos", "Ukrainian Mobile Communications, UMC (now Vodafone Ukraine)", "https://www.vodafone.ua/", "Systems analyst")
         p Second largest mobile operator with more than 20M of subscribers.
         dl
           dt Role
-          dd Systems analyst/TPM (technical project manager) at the Billing Platform Development department 
+          dd Systems analyst at the Billing Platform Development department.
           dt Responsibilities
           dd participation in projects as an analyst and/or technical project manager
           dd requirements gathering and analysis
