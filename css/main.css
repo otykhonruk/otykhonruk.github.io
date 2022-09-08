@@ -11,3 +11,6 @@ a:hover {
 span.icon:before {
     font-size: 32px;
 }
+.headline {
+    font-weight: normal;
+}
