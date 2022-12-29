@@ -10,4 +10,4 @@ install:
 	$(PUG) $<
 
 
-all: OleksandrTykhonruk.en.html
+all: index.html OleksandrTykhonruk.en.html
