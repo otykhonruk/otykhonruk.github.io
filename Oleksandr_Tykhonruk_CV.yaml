@@ -1,0 +1,185 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/main/schema.json
+
+cv:
+  name: Oleksandr Tykhonruk
+  headline: Staff Software Engineer, Technical Lead, Mentor
+  location: Kyiv, Ukraine
+  email: o.tykhonruk@gmail.com
+  phone: "+380957170033"
+  website: https://otykhonruk.github.io
+  social_networks:
+    - network: LinkedIn
+      username: otykhonruk
+    - network: GitHub
+      username: otykhonruk
+
+  sections:
+    summary:
+      - Accomplished Staff Software Engineer and Technical Lead with 20+ years of expertise in distributed systems, cloud architecture (GCP/AWS), and large-scale data engineering. Strong track record of breaking down legacy monoliths into observable microservices, slashing deployment cycle times, and leading cross-functional teams in mission-critical environments. Active engineering mentor and technology trainer.
+
+    experience:
+      - company: Ministry of Defense
+        position: Officer of Primary Responsibility (OPR) for SAP ERP Deployment
+        start_date: 2025-04
+        location: Kyiv, Ukraine
+        summary: Digital transformation and defense logistics modernization for the Armed Forces of Ukraine.
+        highlights:
+          - Serve as Officer of Primary Responsibility (OPR) driving the SAP ERP deployment project for national defense supply chain modernization.
+
+      - company: SkyFi
+        position: Staff Software Engineer
+        start_date: 2022-03
+        end_date: 2022-11
+        location: Remote
+        summary: Commercial satellite imagery and Earth observation marketplace.
+        highlights:
+          - Engineered backend data processing pipelines for satellite imagery ingestion, transformation, and distribution.
+          - "Key technologies: Python, GCP (Google Cloud Platform)."
+
+      - company: Takeoff Technologies Inc
+        position: Technical Lead
+        start_date: 2019-03
+        end_date: 2021-08
+        location: Remote
+        summary: Automated grocery retail fulfillment platform powered by robotics and micro-fulfillment centers.
+        highlights:
+          - Led the engineering team responsible for Inventory and Inbound operations within the automated grocery fulfillment platform.
+          - Co-built CI/CD deployment pipelines, reducing time-to-market for new features from months to days.
+          - Rearchitected the inbound domain by decoupling a legacy monolith into maintainable, observable microservices.
+          - Implemented a cycle-counting system and redesigned the decanting UI as a modern web application, cutting error rates and doubling operator throughput.
+          - "Key technologies: Clojure, Python, Kotlin, TypeScript, Kubernetes, GCP (Google Cloud Platform)."
+
+      - company: Wargaming
+        position: Senior Python Developer
+        start_date: 2018-04
+        end_date: 2019-03
+        location: Kyiv, Ukraine
+        summary: Massive multiplayer online game with 160M+ registered users and 1M+ concurrent players.
+        highlights:
+          - Senior Python developer in the "World of Tanks" core development department.
+          - Shipped the [Dark Front](https://worldoftanks.eu/en/news/general-news/the-dark-front-halloween-mode/) Halloween event mode for World of Tanks, introducing AI-driven gameplay mechanics.
+          - Developed an internal content-creation tool streamlining rapid prototyping and delivery of new game modes.
+          - "Key technologies: Python, ActionScript 3, proprietary BigWorld engine (C++/Python)."
+
+      - company: Ocean.io
+        position: Team Lead
+        start_date: 2017-06
+        end_date: 2018-01
+        location: Kyiv, Ukraine
+        summary: B2B data intelligence and global market data aggregation platform.
+        highlights:
+          - Led the data collection team.
+          - Built scheduling system for large-scale web crawls (~100k domains/week).
+          - "Key technologies: Python, Celery, asyncio/aiohttp, Elasticsearch, MongoDB, Amazon AWS."
+
+      - company: Sportech LLC
+        position: Team Lead
+        start_date: 2016-12
+        end_date: 2017-05
+        location: Kyiv, Ukraine
+        summary: High-frequency sports betting SaaS platform.
+        highlights:
+          - Lead developer and team lead.
+          - Engineered solutions for data collection, automated bet placement, and analytics.
+          - "Key technologies: Python, Selenium, Scrapy, Redis, MySQL, MongoDB, Elasticsearch, Django."
+
+      - company: kvartirkov.com
+        position: Lead Developer
+        start_date: 2014-03
+        end_date: 2016-05
+        location: Kyiv, Ukraine
+        summary: Apartment rentals and short-term property booking marketplace.
+        highlights:
+          - Complete reimplementation of the apartment rentals web platform.
+          - "Key technologies: Django, MySQL, PostgreSQL, Redis."
+
+      - company: IBS Ltd.
+        position: Lead Developer
+        start_date: 2013-09
+        end_date: 2014-03
+        location: Kyiv, Ukraine
+        summary: Enterprise banking software and financial services integration.
+        highlights:
+          - Designed and developed the internet banking system for a Ukrainian commercial bank.
+          - "Key technologies: Spring, Hibernate, Apache Camel, Ember.js."
+
+      - company: ArtOfBytes UG
+        position: Software Engineer
+        start_date: 2012-04
+        end_date: 2013-04
+        location: Remote
+        summary: Mobile gaming studio developing real-time multiplayer titles.
+        highlights:
+          - Developed, deployed, and operated the backend for MMO mobile game.
+          - Integrated third-party services (payments, geolocation, etc.) and social networks.
+          - Built Android Media Browser, Google Play Game Services Plugin, Weather Report, and T-Store in-app purchases plugin.
+          - "Key technologies: Spring framework, SmartFoxServer 2X, MySQL, Redis, Elasticsearch, Amazon AWS, Unity 3D, Android."
+
+      - company: UMC (now Vodafone Ukraine)
+        position: Systems Analyst
+        start_date: 2006-02
+        end_date: 2011-06
+        location: Kyiv, Ukraine
+        summary: National telecommunications operator serving 20M+ subscribers (Billing Platform division).
+        highlights:
+          - Participated in core telecom projects as systems analyst and technical project manager.
+          - Led requirements gathering, incident resolution, technical writing, and software development.
+          - Designed and implemented Money Transfer service, Prepaid Personal Data Collection, and Campaign Management system.
+          - Integrated USSD platform with billing; implemented GPRS online charging and CLIR services.
+          - Managed migration of 20M prepaid subscribers to a new billing platform and automated SIM card reuse lifecycle.
+          - Implemented RingBackTone service (Good'OK) and IS for cellular network coverage management.
+
+      - company: Active 97 Ltd
+        position: Data Engineer
+        start_date: 2000-07
+        end_date: 2005-01
+        location: Kyiv, Ukraine
+        summary: Market research and retail data analytics firm focused on FMCG.
+        highlights:
+          - Designed and developed data warehouses, automated ETL pipelines, and reporting solutions.
+          - Automated billing processes and implemented website integrations.
+          - "Key technologies: Oracle technology stack, Java, Python."
+
+    teaching:
+      - label: Capgemini
+        details: Corporate internship training program (2022)
+      - label: robot_dreams
+        details: Corporate training & [Python for Software Development and Data Analysis](https://robotdreams.cc/uk/course/python-dlya-razrabotki-i-analiza-dannyh) course (2021 – 2022)
+      - label: Hillel IT School
+        details: Advanced Python course instructor (2021 – 2022)
+      - label: ITEA
+        details: Advanced Python course instructor (2018 – 2019)
+      - label: Web Academy
+        details: Python and Django courses instructor (2016 – 2018)
+
+    technical_skills:
+      - label: Programming Languages & Platforms
+        details: Python, Clojure, Kotlin, Java, SQL, procedural SQL (Oracle, PostgreSQL), UNIX shell (sed, awk, bash), C (C99, GNU toolchain), TypeScript, JavaScript (ES6)
+      - label: DBMS
+        details: Oracle, PostgreSQL, MySQL
+      - label: NoSQL & Search Engines
+        details: Redis, Elasticsearch, CouchDB, MongoDB
+      - label: Cloud & Infrastructure
+        details: Docker, Kubernetes, AWS, GCP
+      - label: Operating Systems
+        details: Linux/UNIX, macOS
+
+    languages:
+      - label: Ukrainian
+        details: Native
+      - label: English
+        details: Professional working proficiency
+
+design:
+  theme: classic
+  page:
+    top_margin: 0.4in
+    bottom_margin: 0.4in
+    left_margin: 0.5in
+    right_margin: 0.5in
+  # sections:
+  #   space_between_regular_entries: 0.5em
+  typography:
+    line_spacing: 0.55em
+    font_size:
+      body: 9.5pt
