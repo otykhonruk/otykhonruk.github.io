@@ -6,7 +6,7 @@ cv:
   location: Kyiv, Ukraine
   email: o.tykhonruk@gmail.com
   phone: "+380957170033"
-  website: https://otykhonruk.github.io
+  # website: https://otykhonruk.github.io
   social_networks:
     - network: LinkedIn
       username: otykhonruk
@@ -163,6 +163,10 @@ cv:
         details: Docker, Kubernetes, AWS, GCP
       - label: Operating Systems
         details: Linux/UNIX, macOS
+
+    certifications:
+      - label: Google
+        details: Google AI Professional Certification (May 2026)
 
     languages:
       - label: Ukrainian
